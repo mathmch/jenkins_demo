@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo 'Building' 
+                echo 'Building'
+		error("Build failed because of this and that..")
             }
         }
         stage('Test') { 
