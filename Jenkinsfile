@@ -4,7 +4,6 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Building'
-		error("Oops, something went wrong.")
             }
         }
         stage('Test') { 
@@ -14,7 +13,8 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                echo 'Deploying' 
+                echo 'Deploying'
+		error("Oops, something went wrong.")
             }
         }
     }
